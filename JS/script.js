@@ -19,8 +19,6 @@
 // 2-Leggo tramite JS il valore inserito dall'utente nei campi input
     const userKm = parseInt (document.querySelector('#user-km').value);
     const userAge = parseInt (document.querySelector('#user-age').value);
-    console.log(userKm);
-    console.log(userAge);
 // 3-Calcolo il prezzo del biglietto in base ai dati letti e calcolo eventuali sconti da applicare
     // 3-a -Calcolo del biglietto a prezzo pieno
     let userPriceKm = userKm * 0.21;
@@ -39,7 +37,6 @@
     }
     // 3-d stampa messagio in console log del prezzo in base ai dati forniti
     let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
-    console.log('userMessage' , userMessage);
 // 4-Stampare a schermo il prezzo del biglietto
     let priceButton = document.querySelector('#btn-price');
     priceButton.addEventListener('click' , function (){
@@ -50,14 +47,12 @@
         discount40 = userPriceKm * 40 / 100;
         if (userAge < 18){
             userPriceKm = userPriceKm - discount20;
-            userPriceKm = userPriceKm.toFixed(2);
         }else if (userAge > 65){
             userPriceKm = userPriceKm - discount40;
-            userPriceKm = userPriceKm.toFixed(2);
         }else{
             userPriceKm = userKm * 0.21;
-            userPriceKm = userPriceKm.toFixed(2);
         }
+        userPriceKm = userPriceKm.toFixed(2);
         let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
         document.querySelector('#ticket-price').innerHTML = userMessage;
     });
