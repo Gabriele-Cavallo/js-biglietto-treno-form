@@ -49,10 +49,15 @@
             userPriceKm = userPriceKm - discount20;
         }else if (userAge > 65){
             userPriceKm = userPriceKm - discount40;
-        }else{
-            userPriceKm = userKm * 0.21;
         }
         userPriceKm = userPriceKm.toFixed(2);
         let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
         document.querySelector('#ticket-price').innerHTML = userMessage;
+    });
+
+    let resetButton = document.querySelector('#btn-reset');
+    resetButton.addEventListener('click' , function (){
+        document.querySelector('#user-km').value = '';
+        document.querySelector('#user-age').value = '';
+        document.querySelector('#ticket-price').innerHTML = 'Per calcolare il costo del biglietto inserisci i dati nei campi chilometri ed età e schiaccia il tasto azzurro!!';
     });

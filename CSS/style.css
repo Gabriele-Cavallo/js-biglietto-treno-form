@@ -1,9 +1,20 @@
+/* #region Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* #endregion Reset */
+/* #region Typography */
+.ms-color-green{
+    color: #00df6b;
+}
+/* #endregion Typography */
+/* #region MS-Background */
+.ms-bg-green{
+    background-color: #00df6b;
+}
 .ms-box-shadow{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+/* #endregion MS-Background */

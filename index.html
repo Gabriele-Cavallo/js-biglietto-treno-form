@@ -9,23 +9,24 @@
     <!-- /Bootstrap CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body>
+<body class="ms-bg-green">
     <main class="container-lg text-center align-items-center">
         <div class="row card ms-box-shadow mt-5">
             <div class="col py-4">
                 <div class="input-container mb-3">
-                    <label for="user-km">Chilometri</label>
+                    <label for="user-km" class="fw-bold ms-color-green">Chilometri</label>
                     <input id="user-km" type="text">
                 </div>
                 <div class="input-container mb-3">
-                    <label for="user-age">Età</label>
+                    <label for="user-age" class="fw-bold ms-color-green">Età</label>
                     <input id="user-age" type="text">
                 </div>
-                <button id="btn-price" class=" btn btn-info mb-3">Calcola il prezzo</button>
+                <button id="btn-price" class="btn btn-info mb-3 fw-bold">Calcola il prezzo</button>
+                <button id="btn-reset" class="btn btn-warning mb-3 fw-bold">Reset</button>
             </div>
         </div>
         <div class="row card ms-box-shadow mt-5">
-            <h2 id="ticket-price"></h2>
+            <h2 id="ticket-price" class="p-3">Per calcolare il costo del biglietto inserisci i dati nei campi chilometri ed età e schiaccia il tasto azzurro!!</h2>
         </div>
     </main>
     <!-- Bootstrap JS -->
