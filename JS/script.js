@@ -13,7 +13,12 @@
 
 // 1-Implementare due campi input e un bottone nell'HTMTL
 // 2-Leggo tramite JS il valore inserito dall'utente nei campi input
+    const userKm = parseInt (document.querySelector('#user-km').value);
+    const userAge = parseInt (document.querySelector('#user-age').value);
+    console.log(userKm);
+    console.log(userAge);
 // 3-Calcolo il prezzo del biglietto in base ai dati letti e calcolo eventuali sconti da applicare
     // 3-a -Calcolo del biglietto a prezzo pieno
+    
     // 3-b -Calcolo del biglietto a prezzo scontato del 20%
     // 3-c -Calcolo del biglietto a prezzo scontato del 40%
