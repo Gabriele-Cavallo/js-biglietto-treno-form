@@ -41,7 +41,7 @@
     let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
     console.log('userMessage' , userMessage);
 // 4-Stampare a schermo il prezzo del biglietto
-    const priceButton = document.querySelector('#btn-price');
+    let priceButton = document.querySelector('#btn-price');
     priceButton.addEventListener('click' , function (){
-        document.querySelector('#ticket-price').innerHTML = `${userMessage}`;
+        document.querySelector('#ticket-price').innerHTML = userMessage;
     });
