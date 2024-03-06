@@ -53,8 +53,13 @@
         userPriceKm = userPriceKm.toFixed(2);
         let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
         document.querySelector('#ticket-price').innerHTML = userMessage;
+        document.querySelector('#your-ticket-km').innerHTML = userKm;
+        document.querySelector('#your-age').innerHTML = userAge;
         let randomNumber = Math.floor(Math.random() * 10) + 1;
         document.querySelector('#random-number').innerHTML = randomNumber;
+        let randomCp = Math.floor(Math.random() * 1000) + 1;
+        document.querySelector('#random-cp').innerHTML = randomCp;
+        document.querySelector('#t-price').innerHTML = `${userPriceKm}€`;
     });
 
     let resetButton = document.querySelector('#btn-reset');
