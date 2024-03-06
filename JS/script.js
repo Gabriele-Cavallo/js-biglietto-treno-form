@@ -19,6 +19,20 @@
     console.log(userAge);
 // 3-Calcolo il prezzo del biglietto in base ai dati letti e calcolo eventuali sconti da applicare
     // 3-a -Calcolo del biglietto a prezzo pieno
-    
+    let userPriceKm = userKm * 0.21;
+    userPriceKm = userPriceKm.toFixed(2);
     // 3-b -Calcolo del biglietto a prezzo scontato del 20%
+    let discount20 = userPriceKm * 20 / 100;
+    if (userAge < 18){
+        userPriceKm = userPriceKm - discount20;
+        userPriceKm = userPriceKm.toFixed(2);
+    }
     // 3-c -Calcolo del biglietto a prezzo scontato del 40%
+    let discount40 = userPriceKm * 40 / 100;
+    if (userAge > 65){
+        userPriceKm = userPriceKm - discount40;
+        userPriceKm = userPriceKm.toFixed(2);
+    }
+    // 3-d stampa messagio in console log del prezzo in base ai dati forniti
+    let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
+    console.log('userMessage' , userMessage);
