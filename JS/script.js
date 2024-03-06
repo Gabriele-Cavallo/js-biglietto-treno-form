@@ -67,6 +67,11 @@
         document.querySelector('#user-km').value = '';
         document.querySelector('#user-age').value = '';
         document.querySelector('#ticket-price').innerHTML = 'Per calcolare il costo del biglietto inserisci i dati nei campi chilometri ed età e schiaccia il tasto azzurro!!';
+        document.querySelector('#your-ticket-km').innerHTML = '/';
+        document.querySelector('#your-age').innerHTML = '/';
+        document.querySelector('#random-number').innerHTML = '/';
+        document.querySelector('#random-cp').innerHTML = '/';
+        document.querySelector('#t-price').innerHTML = '/';
     });
     
 
