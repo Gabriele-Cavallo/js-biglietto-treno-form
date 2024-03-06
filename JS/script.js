@@ -56,6 +56,13 @@
         document.querySelector('#ticket-price').innerHTML = userMessage;
         document.querySelector('#your-ticket-km').innerHTML = userKm;
         document.querySelector('#your-age').innerHTML = userAge;
+        if (userAge < 18){
+            document.querySelector('#your-discount').innerHTML = '20%';
+        }else if(userAge > 65){
+            document.querySelector('#your-discount').innerHTML = '40%';
+        }else{
+            document.querySelector('#your-discount').innerHTML = 'Nessuno';
+        }
         let randomNumber = Math.floor(Math.random() * 10) + 1;
         document.querySelector('#random-number').innerHTML = randomNumber;
         let randomCp = Math.floor(Math.random() * 1000) + 1;
@@ -70,6 +77,7 @@
         document.querySelector('#ticket-price').innerHTML = 'Per calcolare il costo del biglietto inserisci i dati nei campi chilometri ed età e schiaccia il tasto azzurro!!';
         document.querySelector('#your-ticket-km').innerHTML = '/';
         document.querySelector('#your-age').innerHTML = '/';
+        document.querySelector('#your-discount').innerHTML = '/';
         document.querySelector('#random-number').innerHTML = '/';
         document.querySelector('#random-cp').innerHTML = '/';
         document.querySelector('#t-price').innerHTML = '/';
