@@ -10,23 +10,46 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body class="ms-bg-green">
-    <main class="container-lg text-center align-items-center">
-        <div class="row card ms-box-shadow mt-5">
-            <div class="col py-4">
-                <div class="input-container mb-3">
-                    <label for="user-km" class="fw-bold ms-color-green">Chilometri</label>
-                    <input id="user-km" type="text">
+    <main class="container-lg text-center">
+        <div class="row mt-5">
+            <h1 class="text-white mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="card ms-box-shadow">
+                <div class="py-4">
+                    <div class="input-container mb-3">
+                        <label for="user-km" class="fw-bold ms-color-green">Chilometri</label>
+                        <input id="user-km" type="text">
+                    </div>
+                    <div class="input-container mb-3">
+                        <label for="user-age" class="fw-bold ms-color-green">Età</label>
+                        <input id="user-age" type="text">
+                    </div>
+                    <button id="btn-price" class="btn btn-info mb-3 fw-bold">Calcola il prezzo</button>
+                    <button id="btn-reset" class="btn btn-warning mb-3 fw-bold">Reset</button>
                 </div>
-                <div class="input-container mb-3">
-                    <label for="user-age" class="fw-bold ms-color-green">Età</label>
-                    <input id="user-age" type="text">
-                </div>
-                <button id="btn-price" class="btn btn-info mb-3 fw-bold">Calcola il prezzo</button>
-                <button id="btn-reset" class="btn btn-warning mb-3 fw-bold">Reset</button>
             </div>
         </div>
-        <div class="row card ms-box-shadow mt-5">
-            <h2 id="ticket-price" class="p-3">Per calcolare il costo del biglietto inserisci i dati nei campi chilometri ed età e schiaccia il tasto azzurro!!</h2>
+        <div class="row mt-5">
+            <h2 class="text-white mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="card ms-box-shadow">
+                <h3 id="ticket-price" class="p-3">Per calcolare il costo del biglietto inserisci i dati nei campi chilometri ed età e schiaccia il tasto azzurro!!</h3>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h2 class="text-white mb-3">IL TUO BIGLIETTO</h2>
+            <div class="card ms-box-shadow">
+                <div class="col-12 d-flex py-4">
+                    <div class="col-3">
+                        <h3>CHILOMETRI</h3>
+                        <span id="your-ticket-km">/</span>
+                    </div>
+                    <div class="col-3">
+                        <h5>Carrozza</h5>
+                        <span id="random-number" class="fw-bold"></span>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Bootstrap JS -->

@@ -17,7 +17,7 @@
 
 // 1-Implementare due campi input e un bottone nell'HTMTL
 // 2-Leggo tramite JS il valore inserito dall'utente nei campi input
-    const userKm = parseInt (document.querySelector('#user-km').value);
+    let userKm = parseInt (document.querySelector('#user-km').value);
     const userAge = parseInt (document.querySelector('#user-age').value);
 // 3-Calcolo il prezzo del biglietto in base ai dati letti e calcolo eventuali sconti da applicare
     // 3-a -Calcolo del biglietto a prezzo pieno
@@ -37,7 +37,7 @@
     }
     // 3-d stampa messagio in console log del prezzo in base ai dati forniti
     let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
-// 4-Stampare a schermo il prezzo del biglietto
+    // 4-Stampare a schermo il prezzo del biglietto
     let priceButton = document.querySelector('#btn-price');
     priceButton.addEventListener('click' , function (){
         const userKm = parseInt (document.querySelector('#user-km').value);
@@ -53,6 +53,8 @@
         userPriceKm = userPriceKm.toFixed(2);
         let userMessage = `Il prezzo del tuo biglietto è di ${userPriceKm}€`;
         document.querySelector('#ticket-price').innerHTML = userMessage;
+        let randomNumber = Math.floor(Math.random() * 10) + 1;
+        document.querySelector('#random-number').innerHTML = randomNumber;
     });
 
     let resetButton = document.querySelector('#btn-reset');
@@ -61,3 +63,5 @@
         document.querySelector('#user-age').value = '';
         document.querySelector('#ticket-price').innerHTML = 'Per calcolare il costo del biglietto inserisci i dati nei campi chilometri ed età e schiaccia il tasto azzurro!!';
     });
+    
+
