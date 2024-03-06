@@ -10,11 +10,11 @@
     color: #00df6b;
 }
 /* #endregion Typography */
-/* #region MS-Background */
+/* #region MS-Class */
 .ms-bg-green{
     background-color: #00df6b;
 }
 .ms-box-shadow{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-/* #endregion MS-Background */
+/* #endregion MS-Class */
